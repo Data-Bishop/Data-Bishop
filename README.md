@@ -1,7 +1,4 @@
 <p align="center">
-  <img src="./pixel.png" width="120" height="120" style="border-radius: 50%;">
-</p>
-<p align="center">
   <img src="https://img.shields.io/badge/-Abasifreke%20Nkanang-007BFF?style=for-the-badge&logo=Azure-DevOps&logoColor=white">
   <img src="https://img.shields.io/badge/-Data%20Engineer-2F4F4F?style=for-the-badge&logo=Databricks&logoColor=white">
 </p>
