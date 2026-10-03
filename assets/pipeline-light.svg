@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 190" width="820" height="190" role="img" aria-labelledby="t d">
+<title id="t">Data pipeline</title>
+<desc id="d">Data flowing from APIs, databases and events through ingest, process and store stages to serving.</desc>
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .line { stroke: #59636e; stroke-width: 1.5; fill: none; opacity: .55; }
+  .node { fill: #f6f8fa; stroke: #59636e; stroke-width: 1.5; }
+  .glyph { stroke: #1f2328; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .name { fill: #1f2328; font-size: 13px; font-weight: 600; text-anchor: middle; }
+  .sub { fill: #59636e; font-size: 10.5px; text-anchor: middle; }
+  .src { fill: #1f2328; font-size: 12px; text-anchor: middle; }
+  .p { opacity: 0; animation: flow linear infinite; }
+  .spin { transform-origin: 400px 87px; animation: spin 6s linear infinite; }
+  .bar { transform-box: fill-box; transform-origin: bottom; animation: grow 2.4s ease-in-out infinite; }
+  .q { animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes flow {
+    0% { transform: translate(0, 0); opacity: 0; }
+    12%, 88% { opacity: 1; }
+    100% { transform: translate(var(--dx), var(--dy)); opacity: 0; }
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes grow { 0%, 100% { transform: scaleY(.45); } 50% { transform: scaleY(1); } }
+  @keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .p, .spin, .bar, .q { animation: none; }
+    .p { opacity: 1; transform: translate(calc(var(--dx) / 2), calc(var(--dy) / 2)); }
+  }
+</style>
+<path class="line" d="M110 27 L200 87"/>
+<path class="line" d="M110 87 L200 87"/>
+<path class="line" d="M110 147 L200 87"/>
+<path class="line" d="M260 87 L370 87"/>
+<path class="line" d="M430 87 L542 87"/>
+<path class="line" d="M598 87 L710 87"/>
+<rect class="node" x="10" y="12" width="100" height="30" rx="15"/>
+<circle cx="26" cy="27" r="4" fill="#2f81f7"/>
+<text class="src" x="66" y="31">APIs</text>
+<rect class="node" x="10" y="72" width="100" height="30" rx="15"/>
+<circle cx="26" cy="87" r="4" fill="#e3761c"/>
+<text class="src" x="66" y="91">databases</text>
+<rect class="node" x="10" y="132" width="100" height="30" rx="15"/>
+<circle cx="26" cy="147" r="4" fill="#2da44e"/>
+<text class="src" x="66" y="151">events</text>
+<rect class="p" x="106" y="23" width="8" height="8" rx="2" fill="#2f81f7" style="--dx:90px;--dy:60px;animation-duration:2.4s;animation-delay:0.0s"/>
+<rect class="p" x="106" y="23" width="8" height="8" rx="2" fill="#2f81f7" style="--dx:90px;--dy:60px;animation-duration:2.4s;animation-delay:1.2s"/>
+<rect class="p" x="106" y="83" width="8" height="8" rx="2" fill="#e3761c" style="--dx:90px;--dy:0px;animation-duration:2.4s;animation-delay:0.4s"/>
+<rect class="p" x="106" y="83" width="8" height="8" rx="2" fill="#e3761c" style="--dx:90px;--dy:0px;animation-duration:2.4s;animation-delay:1.6s"/>
+<rect class="p" x="106" y="143" width="8" height="8" rx="2" fill="#2da44e" style="--dx:90px;--dy:-60px;animation-duration:2.4s;animation-delay:0.8s"/>
+<rect class="p" x="106" y="143" width="8" height="8" rx="2" fill="#2da44e" style="--dx:90px;--dy:-60px;animation-duration:2.4s;animation-delay:2.0s"/>
+<rect class="p" x="256" y="83" width="8" height="8" rx="2" fill="#2f81f7" style="--dx:110px;--dy:0px;animation-duration:2.4s;animation-delay:0.0s"/>
+<rect class="p" x="256" y="83" width="8" height="8" rx="2" fill="#e3761c" style="--dx:110px;--dy:0px;animation-duration:2.4s;animation-delay:0.8s"/>
+<rect class="p" x="256" y="83" width="8" height="8" rx="2" fill="#2da44e" style="--dx:110px;--dy:0px;animation-duration:2.4s;animation-delay:1.6s"/>
+<rect class="p" x="426" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:0.0s"/>
+<rect class="p" x="426" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:0.8s"/>
+<rect class="p" x="426" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:1.6s"/>
+<rect class="p" x="594" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:0.4s"/>
+<rect class="p" x="594" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:1.2s"/>
+<rect class="p" x="594" y="83" width="8" height="8" rx="2" fill="#8957e5" style="--dx:112px;--dy:0px;animation-duration:2.4s;animation-delay:2.0s"/>
+<rect class="node" x="200" y="57" width="60" height="60" rx="10"/>
+<path class="glyph q" style="animation-delay:0.0s" d="M216 76 H244"/>
+<path class="glyph q" style="animation-delay:0.3s" d="M216 87 H244"/>
+<path class="glyph q" style="animation-delay:0.6s" d="M216 98 H244"/>
+<rect class="node" x="370" y="57" width="60" height="60" rx="10"/>
+<g class="spin"><path class="glyph" d="M400 71 L413.9 79 V95 L400 103 L386.1 95 V79 Z"/></g>
+<circle cx="400" cy="87" r="3.5" fill="#8957e5"/>
+<path class="node" d="M542 67 V107 A28 9 0 0 0 598 107 V67"/>
+<ellipse class="node" cx="570" cy="67" rx="28" ry="9"/>
+<path class="line" style="opacity:.8" d="M542 83 A28 9 0 0 0 598 83"/>
+<path class="line" style="opacity:.8" d="M542 97 A28 9 0 0 0 598 97"/>
+<rect class="node" x="710" y="57" width="60" height="60" rx="10"/>
+<rect class="bar" style="animation-delay:0.0s" x="721.0" y="87" width="7" height="18" rx="1.5" fill="#2f81f7"/>
+<rect class="bar" style="animation-delay:0.35s" x="731.5" y="75" width="7" height="30" rx="1.5" fill="#8957e5"/>
+<rect class="bar" style="animation-delay:0.7s" x="742.0" y="83" width="7" height="22" rx="1.5" fill="#2da44e"/>
+<rect class="bar" style="animation-delay:1.0499999999999998s" x="752.5" y="71" width="7" height="34" rx="1.5" fill="#e3761c"/>
+<text class="name" x="230" y="139">ingest</text>
+<text class="sub" x="230" y="155">batch + streaming</text>
+<text class="name" x="400" y="139">process</text>
+<text class="sub" x="400" y="155">transform + validate</text>
+<text class="name" x="570" y="139">store</text>
+<text class="sub" x="570" y="155">warehouse + lake</text>
+<text class="name" x="740" y="139">serve</text>
+<text class="sub" x="740" y="155">analytics + apps</text>
+</svg>
